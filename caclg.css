@@ -1,0 +1,269 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f4f6f8;
+}
+
+header {
+    background-color: #063970;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 6%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.logo-area h1 {
+    font-size: 28px;
+}
+
+.logo-area p {
+    font-size: 13px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
+nav a:hover {
+    background-color: #f4b400;
+    color: #063970;
+    border-radius: 5px;
+}
+
+.hero {
+    height: 520px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 30, 70, 0.65),
+            rgba(0, 30, 70, 0.65)
+        ),
+        url("kiet-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 30px;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #f4b400;
+    color: #063970;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: white;
+}
+
+.section {
+    padding: 70px 8%;
+    text-align: center;
+}
+.section h2,
+.contact h2 {
+    color: #ed8333;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-container img {
+    width: 50%;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.about-text {
+    text-align: left;
+    color:#eaf1f8
+}
+
+.about-text p {
+    margin-bottom: 18px;
+}
+.courses {
+    background-color: #eaf1f8;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+
+    width: 220px;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #063970;
+    margin-bottom: 10px;
+}
+
+.facility-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.facility {
+    width: 230px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.facility h3 {
+    color: #063970;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: #063970;
+    color: white;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    margin: 8px;
+}
+
+footer {
+    background-color: #021f3d;
+    color: white;
+    text-align: center;
+
+    padding: 18px;
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                      url("https://www.kiet.edu/_next/image/?url=%2Fassets%2Fimages%2Fkiet%2Fmain%2Fnew%2FWEB%20Banner.webp&w=3840&q=75&dpl=dpl_96pe4NDGhpxmPyRigb5Pw88moNuk");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    header {
+                     flex-direction: column;
+        gap: 15px;
+    }
+    nav {
+        gap: 8px;
+                             flex-wrap: wrap;
+        justify-content: center;
+    }
+      .hero-content h2 {
+        font-size: 40px;
+    }
+    .about-container {
+               flex-direction: column;
+    }
+    .about-container img {
+        width: 100%;
+    }
+    .about-text {
+                                 text-align: center;
+    }
+
+}

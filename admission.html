@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>KIET Admission Form</title>
+</head>
+<body>
+
+    <h2 style="background-color:rgb(182, 233, 54);"KIET Group of Institutions</h2>
+    <h3>Admission Request Form</h3>
+    <button>Click</button>
+    <script src="main.js"></script>
+
+    <form action="#" method="post">
+        <!-- Personal Details -->
+        <label for="name">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        <label for="name">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- Gender Selection -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Course Selection -->
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course">
+            <option value="btech">B.Tech</option>
+            <option value="mca">MCA</option>
+            <option value="mba">MBA</option>
+            <option value="bpharm">B.Pharm</option>
+        </select><br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Form">
+        <button onclick="alert('hello')"></button>
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>

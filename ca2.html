@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+ margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+     font-family: Arial, sans-serif;
+       scroll-behavior: smooth;
+}
+
+body {
+     background: #f4f6f9;
+    color: #333;
+}
+
+header {
+    background: #172554;
+     color: white;
+       padding: 20px;
+         text-align: center;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+ text-decoration: none;
+                        margin: 10px;
+}
+
+section {
+                        padding: 40px 10%;
+    margin: 20px;
+                     background: white;
+    border-radius: 10px;
+}
+
+h2 {
+                    color: #172554;
+    margin-bottom: 15px;
+}
+
+.project, .recommendation {
+             background: #eaf0ff;
+    padding: 15px;
+                  margin: 10px 0;
+    border-radius: 8px;
+}
+
+button {
+                 padding: 10px 15px;
+    background: #172554;
+    color: white;
+                 border: none;
+    border-radius: 5px;
+             cursor: pointer;
+}
+
+footer {
+    text-align: center;
+          padding: 20px;
+             background: #172554;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Suyash Sachan</h1>
+    <p>BTech Student | Aspiring Web Developer</p>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+    </nav>
+</header>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am Suyash Sachan, a BTech student interested in
+          web development and programming. I enjoy learning new technologies
+    and building creative projects.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+                         <li>HTML</li>
+        <li>CSS</li>
+              <li>JavaScript</li>
+        <li>C++</li>
+        <li>Problem Solving</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Portfolio Website</h3>
+                  <p>A personal website created using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project">
+                    <h3>Indoor Air Quality Monitoring</h3>
+        <p>A smart system designed to monitor indoor air quality
+        and control ventilation automatically.</p>
+    </div>
+</section>
+
+<section id="recommendations">
+    <h2>Recommendations</h2>
+
+    <div id="recommendationList">
+        <div class="recommendation">
+                            Suyash is enthusiastic about learning new technologies.
+        </div>
+    </div>
+    <input type="text" id="recommendationInput"
+                placeholder="Write a recommendation">
+    <button onclick="addRecommendation()">Submit</button>
+</section> 
+<footer>
+    <p>&copy; 2026 Suyash Sachan | My Portfolio</p>
+</footer>
+
+<script>
+function addRecommendation() {
+    let input = document.getElementById("recommendationInput");
+    let text = input.value.trim();
+
+    if (text === "") {
+        alert("Please enter a recommendation!");
+        return;
+    }
+
+         let newRecommendation = document.createElement("div");
+    newRecommendation.className = "recommendation";
+    newRecommendation.textContent = text;
+
+            document.getElementById("recommendationList")
+        .appendChild(newRecommendation);
+
+             input.value = "";
+    alert("Recommendation added successfully!");
+}
+</script>
+
+</body>
+</html>
